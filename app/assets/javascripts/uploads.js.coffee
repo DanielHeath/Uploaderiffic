@@ -4,8 +4,7 @@
 
 jQuery ->
   $("#myS3Uploader").S3Uploader(
-    remove_completed_progress_bar: false,
-    before_add: (() -> alert('hi'); true)
+    remove_completed_progress_bar: false
   )
 
 $('#myS3Uploader').bind 's3_uploads_start', (e) ->
