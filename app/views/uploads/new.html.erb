@@ -1,4 +1,10 @@
-<%= s3_uploader_form id: "myS3Uploader" do %>
+<%=
+  s3_uploader_form(
+    id: "myS3Uploader",
+    callback_url: "/uploads?metadata=#{metadata}&metadata_hmac=#{metadata_hmac}",
+    callback_param: "upload_uri"
+  ) do
+%>
   <%= file_field_tag :file, multiple: true %>
 <% end %>
 

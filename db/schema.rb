@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(version: 20130630121016) do
   enable_extension "plpgsql"
 
   create_table "uploads", force: true do |t|
+    t.string   "intent"
+    t.string   "filepath"
+    t.string   "metadata"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
