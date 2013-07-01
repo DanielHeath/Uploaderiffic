@@ -1,3 +1,36 @@
-// Place all the styles related to the uploads controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.uploader-container {
+  font-size: 15px;
+  color: rgb(69, 69, 69);
+  font-family: 'proxima-nova',sanf-serif;
+
+  .uploader {
+    margin: 20px;
+    border: 1px dashed rgb(183, 187, 192);
+    position: relative;
+    padding: 10px;
+    overflow: auth;
+
+    .message {
+      text-align: center;
+      cursor: default;
+      opacity: 1;
+      filter: none;
+
+      p {
+        margin-bottom: 0px;
+        line-height: 2;
+        vertical-align: middle;
+        .paperclip {
+          padding-left: 22px;
+          padding-bottom: 2px;
+          background: url("http://www.swiftly.com/img/paperclip.png") no-repeat scroll left top transparent;
+        }
+        a {
+          color: rgb(38, 170, 168);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
